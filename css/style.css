@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+}
+
+.container-gum {
+    max-width: 1170px;
+    min-width: 960px;
+    margin: auto;
+    position: relative;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+header div.header-logo {
+    float: left;
+    height: auto;
+    width: 20%
+}
+
+header div.header-nav {
+    float: left;
+    height: auto;
+    width: 80%;
+    ;
+}
+
+header div.header-nav ul {
+    text-align: right;
+    padding: 0;
+}
+
+header div.header-nav ul li {
+    list-style: none;
+    display: inline-block
+}
+
+header div.header-nav ul li a {
+    text-decoration: none;
+}
+
+header div.header-nav nav ul li a {
+    color: #434343;
+    padding: 0 12px;
+}
+
+header div.header-nav .header-registration {
+    background: #f6f6f6
+}
+
+header div.header-nav .header-registration li:nth-child(2n+1) {
+    background: #05aecc;
+}
+
+header div.header-nav .header-registration li:nth-child(2n) {
+    background: #f0626e;
+}
+
+header div.header-nav .header-registration a {
+    display: inline-block;
+    padding: 35px;
+    color: #fff;
+}
+
+section.galery div.dad {
+    float: left;
+    position: relative;
+    width: 25%;
+}
+
+section.galery div.dad .shadow-hover {
+    /*    background: #6a48f5;*/
+    background: #142251;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0.25;
+}
+
+section.galery div.dad a {
+    display: block;
+    position: relative;
+}
+
+section.galery div.dad img {
+    width: 100%;
+    padding-left: 3px;
+}
+
+section.galery div.dad:hover .shadow-hover {
+    display: none;
+}
+
+section.galery div.dad::after {
+    content: 'Новинка';
+    display: block;
+    position: absolute;
+    padding: 2px;
+    background: #af2828;
+    color: #fff;
+    top: -10px;
+    right: -10px;
+    transform: rotate(25deg);
+}
+
+section.galery div.dad:nth-child(2)::after {
+    content: 'Новинка';
+    display: block;
+    position: absolute;
+    background: #af2828;
+    color: #fff;
+    top: -10px;
+    left: -10px;
+    transform: rotate(-25deg);
+}
+
+section.galery div.dad:nth-child(3)::after {
+    content: 'Новинка';
+    display: block;
+    position: absolute;
+    padding: 2px;
+    background: #af2828;
+    color: #fff;
+    bottom: -20px;
+    right: -2S0px;
+    transform: rotate(25deg);
+}
+
+section.galery div.dad:nth-child(4)::after {
+    content: 'Новинка';
+    display: block;
+    position: absolute;
+    padding: 5px;
+    background: #af2828;
+    color: #fff;
+    bottom: 10px;
+    left: -10px;
+    transform: rotate(25deg);
+}
